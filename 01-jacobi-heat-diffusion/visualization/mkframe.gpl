@@ -1,0 +1,16 @@
+#!/usr/bin/env gnuplot
+
+set terminal png
+set view map
+set style function pm3d
+set palette defined (0 'blue', 0.25 'cyan', 0.5 'green', 0.6 'yellow', 0.8 'orange', 1 'red')
+set cbrange [0:200]
+set cbtics 10
+
+do for [t=ARG1:ARG2:ARG3]{
+    datfile = sprintf("grid-%07d",t)
+    outfile = sprintf("frame-%07d.png",t)
+    set output outfile
+
+    splot[0:512][0:512] datfile binary format="%double" array=512x512 with pm3d 
+}
