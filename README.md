@@ -1,6 +1,6 @@
 # Jacobi Heat Diffusion
 
-Heat diffusion is a famous equation used to calculate how temperature spreads from a warm point to all surrounding areas. While mathematicians have solved this problem analytically using differential equations, calculating exact solutions in real-world scenario, especially on grids with millions of points—is computationally infeasible.
+Heat diffusion is a famous equation used to calculate how temperature spreads from a warm point to all surrounding areas. While mathematicians have solved this problem analytically using differential equations, calculating exact solutions in real-world scenario, especially on grids with millions of point is computationally impossible.
 
 To solve this, computer scientists rely on the **Jacobi algorithm**, an iterative method that approximates the heat equation's outcome across discrete grids.
 
