@@ -16,7 +16,7 @@ This folder contains various approaches to parallelizing the Jacobi algorithm ac
 ### [`/02`](./02) — GPU Hyperparameter Optimization
 This folder contains experimental setups and benchmarks for optimizing performance on GPU architectures:
 * Grid and block size hyperparameter searches.
-* Performance tuning to achieve reliable, high-precision results while minimizing latency.
+* Performance tuning to achieve reliable, high-precision results while minimizing the execution time.
 
 ---
 
